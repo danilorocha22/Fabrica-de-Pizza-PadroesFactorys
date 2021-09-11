@@ -1,14 +1,14 @@
 package AbstractFactory.FactoryPizzarias;
 
-import AbstractFactory.FactoryIngredientes.CaliforniaFactoryIngredientes;
+import AbstractFactory.FactoryIngredientes.FactoryIngredientesCalifornia;
 import AbstractFactory.FactoryIngredientes.FactoryIngredientes;
 import AbstractFactory.Pizzas.*;
 
-public class PizzariaCalifornia extends Pizzaria {
+public class FactoryPizzariaCalifornia extends FactoryPizzaria {
     @Override
     Pizza criarPizza(String tipo) {
         Pizza pizza = null;
-        FactoryIngredientes factoryIngredientes = new CaliforniaFactoryIngredientes();
+        FactoryIngredientes factoryIngredientes = new FactoryIngredientesCalifornia();
         if (tipo.equals("queijo")) {
             pizza = new PizzaDeQueijo(factoryIngredientes);
             pizza.setNome("Pizza de Queijo no estilo da California.");

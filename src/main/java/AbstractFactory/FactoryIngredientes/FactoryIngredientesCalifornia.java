@@ -2,7 +2,7 @@ package AbstractFactory.FactoryIngredientes;
 
 import AbstractFactory.Ingredientes.*;
 
-public class CaliforniaFactoryIngredientes implements FactoryIngredientes {
+public class FactoryIngredientesCalifornia implements FactoryIngredientes {
 
 
     @Override

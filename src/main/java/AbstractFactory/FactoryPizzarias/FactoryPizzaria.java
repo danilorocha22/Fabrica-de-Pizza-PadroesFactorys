@@ -2,7 +2,7 @@ package AbstractFactory.FactoryPizzarias;
 
 import AbstractFactory.Pizzas.Pizza;
 
-public abstract class Pizzaria {
+public abstract class FactoryPizzaria {
 
     public final Pizza pedidoPizza(String tipo) {
         Pizza pizza = criarPizza(tipo);

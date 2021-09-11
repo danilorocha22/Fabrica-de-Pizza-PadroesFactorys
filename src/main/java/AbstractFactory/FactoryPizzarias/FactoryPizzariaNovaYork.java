@@ -1,33 +1,28 @@
 package AbstractFactory.FactoryPizzarias;
 
-import AbstractFactory.FactoryIngredientes.ChicagoFactoryIngredientes;
 import AbstractFactory.FactoryIngredientes.FactoryIngredientes;
+import AbstractFactory.FactoryIngredientes.FactoryIngredientesNovaYork;
 import AbstractFactory.Pizzas.*;
 
-public class PizzariaChicago extends Pizzaria {
+public class FactoryPizzariaNovaYork extends FactoryPizzaria {
     @Override
-    Pizza criarPizza(String tipo) {
+    protected Pizza criarPizza(String tipo) {
         Pizza pizza = null;
-        FactoryIngredientes factoryIngredientes = new ChicagoFactoryIngredientes();
+        FactoryIngredientes factoryIngredientes = new FactoryIngredientesNovaYork();
+
         if (tipo.equals("queijo")) {
             pizza = new PizzaDeQueijo(factoryIngredientes);
-            pizza.setNome("Pizza de Queijo no estilo de Chicago.");
+            pizza.setNome("Piza de Queijo no estilo Nova York.");
         } else if (tipo.equals("vegetariana")) {
             pizza = new PizzaVegetariana(factoryIngredientes);
-            pizza.setNome("Pizza Vegetariana no estilo de Chicago");
+            pizza.setNome("Pizza Vegerariana no estilo Nova York.");
         } else if (tipo.equals("marisco")) {
             pizza = new PizzaDeMarisco(factoryIngredientes);
-            pizza.setNome("Pizza de Mariscos no estilo de Chicago");
+            pizza.setNome("Pizza de Mariscos no estilo Nova York. ");
         } else if (tipo.equals("pepperoni")) {
             pizza = new PizzaDePepperoni(factoryIngredientes);
-            pizza.setNome("Pizza de Pepperoni no estilo de Chicago");
+            pizza.setNome("Pizza de Pepperoni no estilo Nova York.");
         }
         return pizza;
     }//metodo
-
-    @Override
-    public void cortar() {
-        System.out.println("Cortando a pizza em pedaços quadrados.");
-    }//metodo
-
 }//classe

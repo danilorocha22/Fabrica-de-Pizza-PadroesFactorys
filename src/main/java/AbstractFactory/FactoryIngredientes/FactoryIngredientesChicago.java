@@ -2,26 +2,26 @@ package AbstractFactory.FactoryIngredientes;
 
 import AbstractFactory.Ingredientes.*;
 
-public class NYFactoryIngredientes implements FactoryIngredientes {
+public class FactoryIngredientesChicago implements FactoryIngredientes {
 
     @Override
     public Massa criarMassa() {
-        return new MassaFina();
+        return new MassaGrossa();
     }//metodo
 
     @Override
     public Molho criarMolho() {
-        return new MolhoMarinara();
+        return new MolhoDeTomate();
     }//metodo
 
     @Override
     public Queijo criarQueijo() {
-        return new QueijoReggiano();
+        return new QueijoMussarela();
     }//metodo
 
     @Override
     public Vegetais[] criarVegetais() {
-        Vegetais vegetais[] = { new Alho(), new Cebola(), new Cogumelo(), new PimentaoVermelho() };
+        Vegetais vegetais[] = { new AzeitonaPreta(), new Espinafre(), new Berinjela() };
         return vegetais;
     }//metodo
 
@@ -32,13 +32,13 @@ public class NYFactoryIngredientes implements FactoryIngredientes {
 
     @Override
     public Marisco criarMarisco() {
-        return new MariscoFresco();
+        return new MariscoCongelado();
     }//metodo
 
     @Override
     public Cobertura[] criarCobertura() {
-        Cobertura cobertura[] = {new TomateFresco(), new Oregano(), new AzeitonaPreta() };
+        Cobertura cobertura[] = { new TomateSeco(), new Oregano() };
         return cobertura;
-    }
+    }//metodo
 
 }//classe
