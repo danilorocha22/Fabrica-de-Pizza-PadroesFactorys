@@ -11,26 +11,10 @@ public abstract class Pizza {
     Vegetais vegetais[];
     Queijo queijo;
     Pepperoni pepperoni;
-    Marisco molusco;
+    Marisco marisco;
     Cobertura[] cobertura;
 
     public abstract void preparar();
-
-    public void assar() {
-        System.out.println("Assar por 25 min a 300º.");
-    }//metodo
-
-    public void cortar() {
-        System.out.println("Cortando a pizza em pedaços triangulares.");
-    }//metodo
-
-    public void embalar() {
-        System.out.println("Embalar a pizza na caixa adequada.");
-    }//metodo
-
-    public void entregar() {
-        System.out.println("Entregar a pizza.");
-    }
 
     public String getNome() {
         return nome;
@@ -49,7 +33,7 @@ public abstract class Pizza {
                 ", vegetais=" + Arrays.toString(vegetais) +
                 ", queijo=" + queijo +
                 ", pepperoni=" + pepperoni +
-                ", molusco=" + molusco +
+                ", marisco=" + marisco +
                 ", cobertura=" + Arrays.toString(cobertura) +
                 '}';
     }

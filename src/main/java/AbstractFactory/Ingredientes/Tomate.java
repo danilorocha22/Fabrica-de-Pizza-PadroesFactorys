@@ -1,4 +1,4 @@
 package AbstractFactory.Ingredientes;
 
-public class Tomate extends Vegetais {
+public abstract class Tomate extends Vegetais {
 }

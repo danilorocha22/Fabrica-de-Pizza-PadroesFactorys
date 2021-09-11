@@ -31,7 +31,7 @@ public class CaliforniaFactoryIngredientes implements FactoryIngredientes {
     }
 
     @Override
-    public Marisco criarMolusco() {
+    public Marisco criarMarisco() {
         return null;
     }
 

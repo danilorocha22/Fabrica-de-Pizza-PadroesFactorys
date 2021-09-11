@@ -8,6 +8,6 @@ public interface FactoryIngredientes {
     Queijo criarQueijo();
     Vegetais[] criarVegetais();
     Pepperoni criarPepperoni();
-    Marisco criarMolusco();
+    Marisco criarMarisco();
     Cobertura[] criarCobertura();
 }//classe

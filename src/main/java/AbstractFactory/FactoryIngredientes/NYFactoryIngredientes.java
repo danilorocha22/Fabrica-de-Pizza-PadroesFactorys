@@ -31,13 +31,13 @@ public class NYFactoryIngredientes implements FactoryIngredientes {
     }//metodo
 
     @Override
-    public Marisco criarMolusco() {
+    public Marisco criarMarisco() {
         return new MariscoFresco();
     }//metodo
 
     @Override
     public Cobertura[] criarCobertura() {
-        Cobertura cobertura[] = {new Tomate(), new Oregano(), new AzeitonaPreta() };
+        Cobertura cobertura[] = {new TomateFresco(), new Oregano(), new AzeitonaPreta() };
         return cobertura;
     }
 

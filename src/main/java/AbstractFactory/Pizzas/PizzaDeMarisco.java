@@ -14,7 +14,9 @@ public class PizzaDeMarisco extends Pizza {
         System.out.println("Preparando "+ nome);
         massa = factoryIngredientes.criarMassa();
         molho = factoryIngredientes.criarMolho();
-        molusco = factoryIngredientes.criarMolusco();
+        marisco = factoryIngredientes.criarMarisco();
+        System.out.println("Cobertura:");
+        cobertura =factoryIngredientes.criarCobertura();
     }//metodo
 
 }//classe

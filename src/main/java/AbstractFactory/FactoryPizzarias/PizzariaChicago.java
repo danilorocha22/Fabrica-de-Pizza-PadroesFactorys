@@ -24,4 +24,10 @@ public class PizzariaChicago extends Pizzaria {
         }
         return pizza;
     }//metodo
+
+    @Override
+    public void cortar() {
+        System.out.println("Cortando a pizza em pedaços quadrados.");
+    }//metodo
+
 }//classe

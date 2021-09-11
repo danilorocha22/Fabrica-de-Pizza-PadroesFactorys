@@ -17,7 +17,9 @@ public class PizzaDeQueijo extends Pizza {
         massa = factoryIngredientes.criarMassa();
         molho = factoryIngredientes.criarMolho();
         queijo = factoryIngredientes.criarQueijo();
+        System.out.println("Cobertura:");
         cobertura =factoryIngredientes.criarCobertura();
     }//metodo
+
 
 }//classe

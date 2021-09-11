@@ -15,6 +15,8 @@ public class PizzaDePepperoni extends Pizza {
         massa = factoryIngredientes.criarMassa();
         molho = factoryIngredientes.criarMolho();
         pepperoni = factoryIngredientes.criarPepperoni();
+        System.out.println("Cobertura:");
+        cobertura =factoryIngredientes.criarCobertura();
     }//metodo
 
 }//classe
