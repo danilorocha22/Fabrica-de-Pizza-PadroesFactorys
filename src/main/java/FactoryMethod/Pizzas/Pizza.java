@@ -8,7 +8,7 @@ public abstract class Pizza {
     List<String> coberturas = new ArrayList<String>();
 
     public void preparar() {
-        System.out.println("Preparando pizza de "+ nome);
+        System.out.println("Preparando "+ nome);
         System.out.println("Amassando a massa... ");
         System.out.println("Jogando o molho... ");
         System.out.println("Adicionando coberturas: ");

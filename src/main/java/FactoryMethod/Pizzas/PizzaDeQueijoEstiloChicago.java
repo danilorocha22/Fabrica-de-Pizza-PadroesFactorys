@@ -8,6 +8,7 @@ public class PizzaDeQueijoEstiloChicago extends Pizza {
         coberturas.add("Queijo mozzarella ralado");
     }//construtor
 
+    @Override
     public void cortar() {
         System.out.println("Cortando a pizza em fatias quadradas.");
     }//metodo

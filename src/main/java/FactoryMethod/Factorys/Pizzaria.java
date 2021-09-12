@@ -4,6 +4,7 @@ import FactoryMethod.Pizzas.Pizza;
 
 public abstract class Pizzaria {
 
+    //Template Method
     public final Pizza pedidoPizza(String tipo) {
         Pizza pizza = criarPizza(tipo);
         pizza.preparar();

@@ -15,8 +15,8 @@ public class SimpleFactoryPizza {
             pizza = new PizzaDeQueijo();
         } else if (tipo.equals("pepperoni")) {
             pizza = new PizzaDePepperoni();
-        } else if (tipo.equals("molusco")) {
-            pizza = new PizzaDeMolusco();
+        } else if (tipo.equals("marisco")) {
+            pizza = new PizzaDeMarisco();
         } else if (tipo.equals("vegetariana")) {
             pizza = new PizzaVegetariana();
         }

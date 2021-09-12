@@ -12,7 +12,7 @@ public class Pizzaria {
 
     public Pizza pedidoPizza(String tipo) {
         Pizza pizza = fabricaPizza.criarPizza(tipo);
-        pizza.prepararPizza(tipo);
+        pizza.prepararPizza();
         pizza.assar();
         pizza.cortar();
         pizza.embalar();

@@ -6,5 +6,5 @@ public class PizzaDeQueijoEstiloNY extends Pizza {
         massa = "Massa fina";
         molho = "Molho marinara";
         coberturas.add("Queijo Reggiano ralado");
-    }
-}
+    }//construtor
+}//classe
